@@ -6,10 +6,8 @@
 
 module.exports = Hamming;
 
-function Hamming(A,B)
+function Hamming()
 {
-	this.A=A;
-	this.B=B;
 }
 
 Hamming.prototype.compute=function(A, B){
