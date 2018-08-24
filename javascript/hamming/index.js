@@ -5,3 +5,30 @@
 
 
 module.exports = Hamming;
+
+function Hamming(A,B)
+{
+	this.A=A;
+	this.B=B;
+}
+
+Hamming.prototype.compute=function(A, B){
+	var dif=0;
+	if(A.length != B.length)
+	{
+		throw 'DNA strands must be of equal length.';
+	}
+	else
+	{
+		
+		for(var i=0;i<A.length;i++)
+		{
+			if(A[i]!=B[i]){
+				dif++;
+			}
+		}
+		
+	}
+	return dif;
+};
+
